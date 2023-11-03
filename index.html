@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Temp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      /* background-color: antiquewhite; */
+      font-family: 'Heebo', sans-serif;
+    }
+
+    /* 1st page */
+
+
+
+    .logo {
+      height: 13.5vmin;
+      width: auto;
+    }
+
+    .container {
+      background-image: url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"');
+      /* background-color: whitesmoke; */
+      position: relative;
+      margin: 13%;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+
+    }
+
+    .main {
+      margin: 13%;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: rgb(221, 238, 245);
+      padding: 15px;
+      /* padding-bottom: 0; */
+    }
+
+    h1 {
+      color: rgb(16, 32, 247);
+      font-size: 4vmax;
+    }
+
+    /* p {
+      font-size: 1.5vmax;
+    } */
+
+    /* .poster {
+            height: 500px;
+            width: 700px;
+        } */
+
+    .poster {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+
+    .button {
+      background-color: rgb(16, 32, 247);
+      border-radius: 5px;
+      padding: 1% 2%;
+      color: rgb(221, 238, 245);
+      cursor: pointer;
+    }
+
+
+    /* 2nd page */
+
+    .page_2 {
+      margin-right: 13%;
+      margin-left: 13%;
+    }
+
+    /* .nav_2 { */
+    /* margin-left: 13%; */
+    /* margin-top: 0px;
+      margin-bottom: 0px;
+    }
+ */
+    .nav_img {
+      height: 100px;
+      width: 100%;
+      object-fit: none;
+      filter: blur(1px);
+    }
+
+    .main_2 {
+      margin-left: 13%;
+      margin-left: 0;
+      margin-top: 0;
+      background-color: rgb(221, 238, 245);
+      padding: 15px;
+    }
+
+    .main_2_1 {
+      text-align: center;
+      display: flex;
+      gap: 0px;
+      justify-content: space-evenly;
+      background-color: rgb(221, 238, 245);
+
+
+    }
+
+    .main_2_2 {
+      text-align: center;
+      display: flex;
+      gap: 0px;
+      justify-content: space-evenly;
+      background-color: rgb(221, 238, 245);
+
+
+    }
+
+    .icon {
+      width: 100%;
+      height: 50%;
+      padding: 10px;
+      background-color: rgb(221, 238, 245);
+
+
+    }
+
+    h3 {
+      size: 90px;
+    }
+
+    .deadline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 25px;
+      background-color: rgb(221, 238, 245);
+      ;
+    }
+
+    .apply_button {
+      background-color: rgb(16, 32, 247);
+      border-radius: 5px;
+      padding: 1% 2%;
+      color: rgb(221, 238, 245);
+
+    }
+
+    /* 3rd page */
+
+    .page_3 {
+      margin-right: 13%;
+      margin-left: 13%;
+      padding-bottom: 40px;
+    }
+
+
+    .main_3 {
+      background-color: rgb(221, 238, 245);
+
+      padding: 15px;
+      /* height: auto; */
+    }
+
+    .main_3_1 {
+      display: flex;
+      /* position: relative; */
+      background-color: rgb(221, 238, 245);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .main_3_a {
+      width: 100%;
+      height: 100%;
+    }
+
+    .main_3_b {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* .main_3_a {
+      width: 50%;
+      height: 400px;
+      padding-top: 10px;
+      background-color: rgb(133, 16, 156);
+      position: absolute;
+      text-align: center;
+    } */
+
+    /* .main_3_b { */
+    /* background-image: url("https://images.pexels.com/photos/8106683/pexels-photo-8106683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    /* position: relative;
+      left: 530px;
+      top: 0;
+      width: 50%;
+      height: 400px;
+      padding-top: 10px;
+      background-color: rgb(51, 230, 28);
+    } */
+
+
+    /* .main_3_a {
+      width: 50%;
+      height: 400px;
+      /* padding-top: 10px; */
+    /* background-color: rgb(221, 238, 245); */
+    /* background-color: rgb(90, 182, 243); */
+    /* 
+      text-align: center;
+      position: relative;
+    } */
+    */ .button_3 {
+      position: absolute;
+      bottom: 2%;
+      margin-left: 40%;
+    }
+
+    .button_n {
+      background-color: rgb(16, 32, 247);
+      border-radius: 5px;
+      padding: 2% 4%;
+      color: rgb(221, 238, 245);
+      margin-top: 30%;
+    }
+
+    .poster_3_b {
+      width: 100%;
+      height: 100%;
+      object-fit: none;
+    }
+
+    /* page 4 */
+
+    .page_4 {
+      margin-right: 13%;
+      margin-left: 13%;
+      left: 25px;
+    }
+
+    .circular_image {
+      height: 60%;
+      width: 60%;
+      border-radius: 50%;
+      border: 2px solid aqua;
+      /* overflow: hidden; */
+    }
+
+    .pg_main_1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(90, 182, 243);
+    }
+
+    .pg_main_2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: rgb(90, 182, 243);
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-top: 3px;
+      background-image: url();
+    }
+
+    .pg_main_3 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(16, 32, 247);
+      padding-left: 0;
+      color: rgb(221, 238, 245);
+    }
+
+
+    /* media query */
+
+    @media (max-width : 600px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+
+      }
+
+      .main_2_1 {
+        flex-direction: column;
+      }
+
+      .main_2_2 {
+        flex-direction: column;
+      }
+
+      .main_3_1 {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        row-gap: 40px;
+      }
+
+      .button_n {
+        margin-left: 35%;
+        margin-top: 10%;
+      }
+
+      .pg_main_2 {
+        flex-direction: column;
+      }
+
+      .pg_main_3 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        margin: 2%;
+      }
+
+      .main {
+        margin: 2%;
+      }
+
+      .page_2 {
+        margin: 2%;
+      }
+
+      .main_2 {
+        margin: 2%;
+      }
+
+      .page_3 {
+        margin: 2%;
+      }
+
+      .page_4 {
+        margin: 2%;
+      }
+
+      .circular_image {
+        height: 40%;
+        width: 40%;
+        border-radius: 50%;
+        border: 2px solid aqua;
+
+      }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="logo" class="logo">
+      <a href="##" class="link">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- page 1 -->
+  <div class="main">
+
+    <h1>Early Admission Information</h1>
+    <br>
+    <img
+      src="https://images.pexels.com/photos/8197494/pexels-photo-8197494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="poster_image" class="poster">
+    <br> <br>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas risus, nunc, ultrices est. Tortor, turpis
+      pellentesque cursus ornare justo, nibh in venenatis. Faucibus mattis vulputate tristique nisl, malesuada. Molestie
+      lectus sed iaculis sapien at ipsum.
+    </p> <br>
+    <button class="button">Apply Now</button>
+  </div>
+  <!-- 2nd page -->
+
+  <div class="page_2">
+
+    <div class="nav_2">
+      <img
+        src="https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="" class="nav_img">
+    </div>
+
+    <!-- Icons category -->
+    <div class="main_2">
+      <h1>Admission Process Steps</h1>
+      <br>
+      <div class="main_2_1">
+        <div class="icon" style="background-color: rgb(167, 252, 252);">
+          <h4>01.</h4> <br>
+          <i class="fa-regular fa-file-zipper"></i><br>
+          <i class="fa-solid fa-">ONLINE APPLICATION</i> <br> <br>
+          <!-- <h4>ONLINE APPLICATION</h4> <br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+        <br>
+        <div class="icon" style="background-color: rgb(90, 182, 243);">
+          <h4>02.</h4> <br>
+          <i class="fa-solid fa-magnifying-glass"></i><br>
+          <i class="fa-solid fa-">PROFILE EVALUATION</i> <br> <br>
+          <!-- <h4>PROFILE EVALUATION</h4><br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+        <br>
+        <div class="icon" style="background-color: rgb(167, 252, 252);">
+          <h4>03.</h4> <br>
+          <i class="fa-solid fa-pen-nib"></i><br>
+          <i class="fa-solid fa-">ENTRANCE TEST</i> <br> <br>
+          <!-- <h4>ENTRANCE TEST</h4><br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="main_2_2">
+        <div class="icon" style="background-color: rgb(90, 182, 243);">
+          <h4>04.</h4> <br>
+          <i class="fa-solid fa-chart-line"></i> <br>
+          <i class="fa-solid fa-">YOUR CASE ANALYSIS</i> <br> <br>
+          <!-- <h4>YOUR CASE ANALYSIS</h4><br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+        <br>
+        <div class="icon" style="background-color: rgb(167, 252, 252);">
+          <h4>05.</h4> <br>
+          <i class="fa-solid fa-clipboard-question"></i> <br>
+          <i class="fa-solid fa-">ADMISSION INTERVIEW</i> <br> <br>
+          <!-- <h4>ADMISSION INTERVIEW</h4><br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+        <br>
+        <div class="icon" style="background-color: rgb(90, 182, 243);">
+          <h4>06.</h4> <br>
+          <i class="fa-solid fa-handshake"></i> <br>
+          <i class="fa-solid fa-">OFFER ACCEPTANCE</i> <br> <br>
+          <!-- <h4>OFFER ACCEPTANCE</h4><br> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus vitae enim suspendisse quis nam massa
+            blandit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="deadline">
+      <h2>Deadline: October 23, 2023</h2>
+      <br>
+      <button class="apply_button">Apply Now</button>
+    </div>
+  </div>
+  </div>
+
+  <!-- 3rd page -->
+
+  <div class="page_3">
+
+    <div class="nav_3">
+      <img
+        src="https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="" class="nav_img">
+    </div>
+
+    <div class="main_3">
+      <h2>About The University</h2>
+      <h1>Your journey starts here</h1>
+      <div class="main_3_1">
+        <div class="main_3_a">
+          <p style="height: vmax;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing consequat, cursus
+            platea at nec vestibulum amet. Ullamcorper congue proin cursus mi feugiat sodales arcu leo aliquam. Placerat
+            vulputate nec nunc egestas. Lectus odio facilisi in gravida pellentesque. Lectus odio facilisi in gravida.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Adipiscing consequat, cursus platea at nec
+            vestibulum amet. </p>
+          <div class="button_3">
+            <button class="button_n">Apply Now</button>
+          </div>
+        </div>
+        <div class="main_3_b">
+          <img
+            src="https://images.pexels.com/photos/8106683/pexels-photo-8106683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="poster image" class="poster_3_b" height="100vh" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page 4 -->
+
+  <div class="page_4">
+    <div class="pg_main_1">
+      <h1>Need Help</h1>
+      <a href="##">Contact Us-></a>
+    </div>
+
+    <div class="pg_main_2">
+
+      <div class="pg_main_2_a">
+        <img src="https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="circular image" class="circular_image">
+        <br>
+        <h4>Miss X</h4>
+        <br>
+        <p>Director of Hospitality</p>
+      </div>
+
+      <div class="pg_main_2_a">
+        <img src="https://images.pexels.com/photos/4307869/pexels-photo-4307869.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="circular image" class="circular_image">
+        <br>
+        <h4>Mr Y</h4>
+        <br>
+        <p>Dean of Students</p>
+      </div>
+
+      <div class="pg_main_2_a">
+        <img src="https://images.pexels.com/photos/5876695/pexels-photo-5876695.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="circular image" class="circular_image">
+        <br>
+        <h4>Miss Z</h4>
+        <br>
+        <p>Admission Recruiter </p>
+      </div>
+    </div>
+
+    <div class="pg_main_3">
+      <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="logo" class="logo">
+      <br>
+      <p>Copyright © 2023 Your Brand Here, All rights reserved.</p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
